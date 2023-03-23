@@ -35,6 +35,6 @@ dict_count = {} # Пустой словарь
 for item in my_string: # Перебор полученных данных
     dict_count[item] = dict_count.get(item, -1) + 1 # Создаем ключ с присваиванием, при повторении увеличиваем на 1
     if dict_count.get(item) > 0:
-        print(f'{item}_{dict_count.get(item)}' , end=' ') # Вывод значения и кол-во
+        print(f'{item}_{dict_count.get(item)}' , end=' ') # Вывод значения и кол-во на печать
     else:
         print(item, end=' ')
