@@ -8,11 +8,11 @@
 # -> 1
 
 n = int(input("Введите размер массива: "))
-mass = input ("Вводите числа в массиве: ").split()
-x = (input("Введите искомое число X: "))
+mass = input("Вводите числа в массиве: ").split()
+search = (input("Введите искомое число X: "))
 
-count_of_x = 0
+count_of_search = 0
 for i in mass:
-    if x == i:
-        count_of_x += 1
-print(f'Значение {x} встречается в списке {count_of_x} раз')
+    if search == i:
+        count_of_search += 1
+print(f'Значение {search} встречается в списке {count_of_search} раз')
