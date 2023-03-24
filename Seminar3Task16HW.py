@@ -7,16 +7,6 @@
 # 3 
 # -> 1
 
-# n = int(input("Введите размер массива: "))
-# mass = input ("Вводите числа в массиве: ").split()
-# x = (input("Введите искомое число X: "))
-
-# count_of_x = 0
-# for i in mass:
-#     if x == i:
-#         count_of_x += 1
-# print(count_of_x)
-
 n = int(input("Введите размер массива: "))
 mass = input ("Вводите числа в массиве: ").split()
 x = (input("Введите искомое число X: "))
