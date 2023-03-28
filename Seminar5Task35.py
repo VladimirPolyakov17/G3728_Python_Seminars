@@ -19,7 +19,7 @@ def is_simple(number: int) -> bool:
     elif number in [1, 2, 3]:
         return True
     else:
-        for div in range(3, int(math.sqrt(number) +1, 2)):
+        for div in range(3, int(math.sqrt(number)) +1, 2):
             if number % div == 0:
                 return False
     return True
