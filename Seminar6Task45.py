@@ -6,15 +6,31 @@
 # выведена только один раз (перестановка чисел новую пару не дает). 
 # Ввод: 300 	 Вывод: 220 284
 
-def sum_del(p):
-    summa = 0
-    for e in range(1, p // 2 + 1):
-        if p % e == 0:
-            summa += e
-    return summa
+# # 1 Вариант:
+# def sum_del(p):
+#     summa = 0
+#     for e in range(1, p // 2 + 1):
+#         if p % e == 0:
+#             summa += e
+#     return summa
 
-k = 400
-for n in range(1, k):
-    m = sum_del(n)
-    if n < m <= k and n == sum_del(m):
-        print(n, m)
+# k = 400
+# for n in range(1, k):
+#     m = sum_del(n)
+#     if n < m <= k and n == sum_del(m):
+#         print(n, m)
+
+# 2 Вариант:
+def deviders(number: int) -> int:
+    list_dev = []
+    for div in range(1, number//2 + 1):
+        if not number % div:
+            list_dev.append(div)
+    return sum(list_dev)
+
+unique_list = []
+for num in range(10000):
+    if deviders(deviders(num)) == num and num != deviders(num):
+        if not (num, deviders(num)) in unique_list:
+            unique_list.append((deviders(num), num))
+            print(num, deviders(num))
