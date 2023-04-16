@@ -12,4 +12,3 @@
 # else: 
 # print(‘fail’) 
 # Вывод: ok
-
